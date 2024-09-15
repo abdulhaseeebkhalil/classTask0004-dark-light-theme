@@ -1,8 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const themeButton = document.getElementById('themeButton');
-    const body = document.body;
+    var themeButton = document.getElementById('themeButton');
+    var body = document.body;
 
-    // Check for saved user preference in localStorage
     if (localStorage.getItem('theme') === 'dark') {
         body.classList.add('dark-mode');
         themeButton.textContent = 'Day';
